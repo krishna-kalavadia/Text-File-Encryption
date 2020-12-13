@@ -9,14 +9,13 @@ Text is encrypted using a Vigenere Cipher, Affine Cipher and substitution
  ![Image](screenshots/main_screen.png "Main Page")
  
 ## Installation
-To install and run
-1.  Clone the repository and navigate to the cloned repository 
-2.  ```bash
+To install and run, clone the repository, navigate to the cloned repository and run the following commands:
+  ```bash
     pip install -r requirements.txt 
-    ```
-3.  ```bash
+   ```
+  ```bash
     python text_encryption.py
-    ```
+   ```
 
 ## Usage
 ##### To Encrypt a text file
