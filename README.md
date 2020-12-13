@@ -1,6 +1,6 @@
 ## Text File Encryption
 
-Created a GUI tool using Python able to encrypt text files with multiple encryption layers and decrypt them
+Created a GUI program using Python that encrypts text files with multiple encryption layers and can decrypt them
 
 Text is encrypted using a Vigenere Cipher, Affine Cipher and substitution 
 
@@ -10,11 +10,11 @@ Text is encrypted using a Vigenere Cipher, Affine Cipher and substitution
  
 ## Installation
 To install and run
-1. Clone the repository and navigate to the cloned repository 
-3. ```bash
+1.  Clone the repository and navigate to the cloned repository 
+2.  ```bash
     pip install -r requirements.txt 
     ```
-4. ```bash
+3.  ```bash
     python text_encryption.py
     ```
 
