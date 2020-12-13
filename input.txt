@@ -1,0 +1,12 @@
+The program encrypts text using 3 encryption ciphers
+
+The first cipher that is used is a simple substitution cipher using a randomized cipher alphabet
+
+The next cipher applied is an Affine cipher, which uses the simple function f(x) = (ax + b) mod m.
+In this method each character is mapped to some numeric value, encrypted using the function above and then the resulting numeric value is mapped back to a character.
+
+The last cipher applied is a Vigenere cipher which is a Polyalphabetic cipher.
+This cipher uses a key of characters and is essentially a series of Caesar ciphers where the shift amount is based on a character in the key word.
+
+Usually the Vigenere and Affine cipher only translate letters to letters but with the ASCII dict created in the code letters can be translated to other characters
+This project was just for me to learn about the basics of cryptography and some basic ciphers so I wouldn't use this to encrypt anything super critical, maybe use it for just a grocery list for now.
