@@ -169,9 +169,9 @@ class MainWindow:
         if input_file == "":
             error_wd = Toplevel(self.root)
             error_wd.geometry("240x80")
-            enter_key_lbl = Label(error_wd, text="ERROR no input file selected", font=("Helvetica", 16), pady=10,
+            error_lbl = Label(error_wd, text="ERROR no input file selected", font=("Helvetica", 16), pady=10,
                                   padx=1)
-            enter_key_lbl.pack()
+            error_lbl.pack()
             quit_btn = Button(error_wd, text="Close", font=("Helvetica", 14), command=error_wd.destroy, pady=1,
                               padx=10)
             quit_btn.pack()
