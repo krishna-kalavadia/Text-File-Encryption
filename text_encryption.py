@@ -227,12 +227,12 @@ class MainWindow:
         # Display a confirmation window for user
         completed_wd = Toplevel(self.root)
         completed_wd.geometry("250x120")
-        enter_key_lbl = Label(completed_wd, text="Completed Encryption", font=("Helvetica", 16), pady=10, padx=1)
-        enter_key_lbl.pack()
+        completed_lbl = Label(completed_wd, text="Completed Encryption", font=("Helvetica", 16), pady=10, padx=1)
+        completed_lbl.pack()
         if key == "DeFaultKeY":
-            enter_key_lbl = Label(completed_wd, text="No key entered, used Default Key", font=("Helvetica", 14),
+            completed_lbl2 = Label(completed_wd, text="No key entered, used Default Key", font=("Helvetica", 14),
                                   pady=10, padx=1)
-            enter_key_lbl.pack()
+            completed_lbl2.pack()
 
         quit_btn = Button(completed_wd, text="Close", font=("Helvetica", 14), command=completed_wd.destroy, pady=1,
                           padx=10)
@@ -247,10 +247,10 @@ class MainWindow:
         if input_file == "":
             error_wd = Toplevel(self.root)
             error_wd.geometry("350x100")
-            enter_key_lbl = Label(error_wd, text="ERROR no input file to decrypt selected", font=("Helvetica", 15),
+            error_lbl = Label(error_wd, text="ERROR no input file to decrypt selected", font=("Helvetica", 15),
                                   pady=10,
                                   padx=1)
-            enter_key_lbl.pack()
+            error_lbl.pack()
             quit_btn = Button(error_wd, text="Close", font=("Helvetica", 14), command=error_wd.destroy, pady=1,
                               padx=10)
             quit_btn.pack()
@@ -262,9 +262,9 @@ class MainWindow:
         if key_file == "":
             error_wd = Toplevel(self.root)
             error_wd.geometry("380x100")
-            enter_key_lbl = Label(error_wd, text="ERROR no file containing encryption keys selected",
+            error_lbl = Label(error_wd, text="ERROR no file containing encryption keys selected",
                                   font=("Helvetica", 15), pady=10, padx=1)
-            enter_key_lbl.pack()
+            error_lbl.pack()
             quit_btn = Button(error_wd, text="Close", font=("Helvetica", 14), command=error_wd.destroy, pady=1,
                               padx=10)
             quit_btn.pack()
@@ -330,11 +330,11 @@ class MainWindow:
         # Display a confirmation window for user
         completed_wd = Toplevel(self.root)
         completed_wd.geometry("250x120")
-        enter_key_lbl = Label(completed_wd, text="Completed Decryption", font=("Helvetica", 16), pady=5, padx=1)
-        enter_key_lbl.pack()
-        enter_key_lbl = Label(completed_wd, text="Decrypted text in 'decrypted.txt'", font=("Helvetica", 16), pady=5,
+        completed_lbl = Label(completed_wd, text="Completed Decryption", font=("Helvetica", 16), pady=5, padx=1)
+        completed_lbl.pack()
+        completed_lbl2 = Label(completed_wd, text="Decrypted text in 'decrypted.txt'", font=("Helvetica", 16), pady=5,
                               padx=1)
-        enter_key_lbl.pack()
+        completed_lbl2.pack()
         quit_btn = Button(completed_wd, text="Close", font=("Helvetica", 14), command=completed_wd.destroy, pady=1,
                           padx=10)
         quit_btn.pack()
