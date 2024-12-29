@@ -6,7 +6,7 @@ Text is encrypted using a Vigenere Cipher, Affine Cipher and substitution
 
 ## Screenshots
 
- ![Image](screenshots/main_screen.png "Main Page")
+ <img src="screenshots/main_screen.png" alt="Main Page" width="600"/>
  
 ## Installation
 To install and run, clone the repository, navigate to the cloned repository and run the following commands:
